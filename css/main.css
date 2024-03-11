@@ -1,4 +1,10 @@
 /* General styles that apply to all pages */
+:root{
+    /* set the variable color */
+    /* using=> color: var(--primary-color) */
+    --primary-color: #0015A1;
+    --primary-color: #FFE630;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
