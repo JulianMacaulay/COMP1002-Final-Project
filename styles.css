@@ -11,12 +11,37 @@ header {
     padding: 1rem 0;
 }
 
+
+
 nav ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem 0;
+    margin: 0;
 }
+
+nav ul li {
+    background-color:  #0015A1; /* Original background color */
+    
+    padding: 10px 20px; /* Padding inside the boxes */
+    margin: 0 10px; /* Space between items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+nav ul li a{
+    color: #1E1E1E;
+    font-weight: bold; /* Makes the text bold */
+    font-size: 20px; /* Adjust the size as needed */
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #FFE630; /* Change background on hover */
+    cursor: pointer; /* Change cursor to indicate clickable */
+}
+
 
 .logo {
     height: 55px;
@@ -94,11 +119,77 @@ nav ul {
 }
 
 /* Footer Styles */
+
+
 footer {
-    background-color:  #0015A1;
+    background-color: #1E1E1E;
     color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* This will ensure the content wraps on smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Minimum width before the content will wrap */
+}
+
+.footer-section h4 {
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.footer-section ul,
+.footer-section p {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: #CCC;
+    text-decoration: none;
+    display: block; /* Make the links stack vertically */
+}
+
+.footer-credit {
+
     text-align: center;
-    padding: 1rem;
+
+    /* text-align: center; */
+    margin-top: 20px; /* Add space above the credit line */
+    color: #CCC;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+
+
+
+.app-link {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.footer-credit {
+    text-align: center;
+    margin-top: 2em;
+    color: #CCCCCC;
 }
 
 /* Responsive Styles */
