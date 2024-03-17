@@ -1,0 +1,122 @@
+/* Base Styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color:  #0015A1;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 55px;
+}
+
+/* Main Banner Styles */
+.banner {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background:  #0015A1 url('images/banner-background.jpg') center / cover no-repeat;
+}
+
+/* Flex Container for Products */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.product {
+    flex: 1 0 calc(25% - 1rem);
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 100%;
+    display: block;
+}
+
+/* Category and Releases Styles */
+.shop-by-category h2,
+.new-releases h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+.Games-Introduction h2 {
+    text-align: center;
+    margin: 2rem 0;
+    
+}
+
+.categories-container,
+.releases-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-item,
+.release-item {
+    flex: 1 0 calc(20% - 1rem);
+    height: px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Games-Introduction {
+    max-width: 1200px; /* Or 100% for full width */
+    margin: auto; /* Center the section */
+    padding: 2rem; /* Add some padding around the content */
+}
+
+.release-item iframe {
+    width: 100%; /* Take the full width of the container */
+    height: 300px; /* Set a fixed height, or use relative units like vh */
+    border: none; /* Optional: removes the border */
+}
+
+/* Footer Styles */
+footer {
+    background-color:  #0015A1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product, .category-item, .release-item {
+        flex: 1 0 100%;
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+}
