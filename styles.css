@@ -52,7 +52,7 @@ nav ul li:hover {
     color: #1E1E1E;
     text-align: center;
     padding: 2rem;
-    background:  #ededed url('images/banner-background.jpg') center / cover no-repeat;
+    background:  #0015A1  url('images/banner-background.jpg') center / cover no-repeat;
 }
 
 /* Flex Container for Products */
