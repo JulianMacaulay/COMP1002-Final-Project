@@ -7,7 +7,7 @@ body, h1, p {
 
 /* Header Styles */
 header {
-    background-color:  #0015A1;
+    background-color:  #ededed;
     padding: 1rem 0;
 }
 
@@ -23,7 +23,7 @@ nav ul {
 }
 
 nav ul li {
-    background-color:  #0015A1; /* Original background color */
+    background-color:  #ededed; /* Original background color */
     
     padding: 10px 20px; /* Padding inside the boxes */
     margin: 0 10px; /* Space between items */
@@ -49,14 +49,15 @@ nav ul li:hover {
 
 /* Main Banner Styles */
 .banner {
-    color: white;
+    color: #1E1E1E;
     text-align: center;
     padding: 2rem;
-    background:  #0015A1 url('images/banner-background.jpg') center / cover no-repeat;
+    background:  #ededed url('images/banner-background.jpg') center / cover no-repeat;
 }
 
 /* Flex Container for Products */
 .flex-container {
+    padding: 1rem 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -64,6 +65,7 @@ nav ul li:hover {
 }
 
 .product {
+    padding: 1rem 0;
     flex: 1 0 calc(25% - 1rem);
     margin: 0.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -88,6 +90,7 @@ nav ul li:hover {
 
 .categories-container,
 .releases-container {
+    padding: 1rem 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -98,6 +101,7 @@ nav ul li:hover {
 
 .category-item,
 .release-item {
+    padding: 1rem 0;
     flex: 1 0 calc(20% - 1rem);
     height: px;
     background-color: #f4f4f4;
