@@ -1,4 +1,4 @@
-/* Base Styles */
+/* basic style */
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -23,23 +23,23 @@ nav ul {
 }
 
 nav ul li {
-    background-color:  #ededed; /* Original background color */
+    background-color:  #ededed; /* background color */
     
     padding: 10px 20px; /* Padding inside the boxes */
     margin: 0 10px; /* Space between items */
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s; /* transition for hover effect */
 }
 nav ul li a{
     color: #1E1E1E;
     font-weight: bold; /* Makes the text bold */
-    font-size: 20px; /* Adjust the size as needed */
+    font-size: 20px; /* Adjust the size */
     text-decoration: none;
 }
 
 nav ul li:hover {
     background-color: #FFE630; /* Change background on hover */
-    cursor: pointer; /* Change cursor to indicate clickable */
+    cursor: pointer; 
 }
 
 
@@ -47,7 +47,7 @@ nav ul li:hover {
     height: 55px;
 }
 
-/* Main Banner Styles */
+
 .banner {
     color: #1E1E1E;
     text-align: center;
@@ -65,11 +65,15 @@ nav ul li:hover {
 }
 
 .product {
+    display: flex;
     padding: 1rem 0;
     flex: 1 0 calc(25% - 1rem);
     margin: 0.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-direction: column; /* make elements  vertically */
+    justify-content: space-between
 }
+
 
 .product-image {
     width: 100%;
@@ -101,6 +105,9 @@ nav ul li:hover {
 
 .category-item,
 .release-item {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     padding: 1rem 0;
     flex: 1 0 calc(20% - 1rem);
     height: px;
@@ -111,16 +118,30 @@ nav ul li:hover {
     justify-content: center;
 }
 .Games-Introduction {
-    max-width: 1200px; /* Or 100% for full width */
+    max-width: 1200px; /*max width */
     margin: auto; /* Center the section */
     padding: 2rem; /* Add some padding around the content */
 }
 
 .release-item iframe {
     width: 100%; /* Take the full width of the container */
-    height: 300px; /* Set a fixed height, or use relative units like vh */
-    border: none; /* Optional: removes the border */
+    height: 300px; /* Set a fixed height/
+    border: none; /*  removes the border */
 }
+
+
+.release-item img {
+    max-width: 100%; /* max size of the images */
+    height: 80%; /* fixed portion of for the image */
+    object-fit: cover; /* image without distortion */
+}
+
+.release-item h3 {
+    text-align: center;
+    margin: 0; 
+    width: 100%; 
+}
+
 
 /* Footer Styles */
 
@@ -133,8 +154,16 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     flex-wrap: wrap; /* This will ensure the content wraps on smaller screens */
+}
+
+
+.releases-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around; /* This will distribute space evenly around each item */
+    align-items: stretch; 
 }
 
 .footer-section {
