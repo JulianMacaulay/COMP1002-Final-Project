@@ -21,7 +21,9 @@
  */
 
 body {
+  box-sizing: border-box;
   margin: 0;
+  line-height: 1.5;
 }
 
 /**
@@ -346,4 +348,16 @@ template {
 
 [hidden] {
   display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+p{
+  margin: 0.25rem;
 }

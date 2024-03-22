@@ -1,6 +1,66 @@
 /* Specific styles for the home page */
 .home-banner {
     background-color: #f2f2f2;
-    padding: 2em;
+    padding         : 2em;
+    text-align      : center;
+}
+
+.general-title {
+    position: relative;
+  }
+  
+.general-title::after {
+    content         : "";
+    position        : absolute;
+    width           : 60px;
+    height          : 0.15rem;
+    background-color: var(--primary-color);
+    bottom          : -10px;
+    left            : 50%;
+    transform       : translateX(-50%);
+  }
+  
+.list-nostyle{
+    list-style: none;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-stretch{
+    align-items: stretch;
+}
+
+.text-center {
     text-align: center;
 }
