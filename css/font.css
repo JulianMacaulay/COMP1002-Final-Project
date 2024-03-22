@@ -27,11 +27,18 @@
   font-weight: 800;
 }
 
+.text-4xl{
+  font-size  : 4rem;
+}
+
 .text-secondary {
   color: var(--secondary-color);
 }
 .text-primary{
   color: var( --primary-color);
+}
+.text-white{
+  color: white;
 }
 
 .font-bold{

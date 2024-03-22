@@ -5,7 +5,24 @@
     text-align      : center;
 }
 
-
+.general-title {
+    position: relative;
+  }
+  
+.general-title::after {
+    content         : "";
+    position        : absolute;
+    width           : 60px;
+    height          : 0.15rem;
+    background-color: var(--primary-color);
+    bottom          : -10px;
+    left            : 50%;
+    transform       : translateX(-50%);
+  }
+  
+.list-nostyle{
+    list-style: none;
+}
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -18,15 +35,17 @@
 .justify-center {
     justify-content: center;
 }
-
-.jusify-between {
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.justify-between {
     justify-content: space-between;
 }
 .justify-around{
     justify-content: space-around;
 }
 
-.jusify-end {
+.justify-end {
     justify-content: flex-end;
 }
 

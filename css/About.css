@@ -1,0 +1,32 @@
+.w-10 {
+  width: 70px;
+}
+
+.h-10 {
+  height: 70px;
+}
+
+.achievement-item {
+  min-width : 190px;
+  min-height: 150px;
+  margin    : 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .intro {
+    width: 30%;
+  }
+
+  .achievement {
+    width: 40%;
+  }
+
+  .achievement>ul {
+    justify-content: space-between;
+  }
+
+  .achievement-item {
+    min-width: 175px;
+    margin   : 20px;
+  }
+}

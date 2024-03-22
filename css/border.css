@@ -5,3 +5,7 @@
 .border-dark{
   border-color: #eee;
 }
+
+.border-circle{
+  border-radius: 50%;
+}
