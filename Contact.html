@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="footer.js"></script>
+    <script src="header.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6e47eb02e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <section class="flex flex-col justufy-center shadow p-5">
+      <ul class="breadcrumb flex items-center">
+        <li class="p-1">
+          <a href="./HomePage.html" class="text-primary">
+            <i class="fa-solid fa-house mr-1" size="large"></i>
+            Home</a
+          >
+        </li>
+        <li class="p-1">&gt;</li>
+        <li class="p-1">Contact</li>
+      </ul>
+      <div class="text-center">
+        <h3 class="h2 contact-title">Contact Us</h3>
+        <small class="text-secondary">Contact us whenever you want</small>
+      </div>
+      <div class="flex items-stretch contact-info mt-3">
+        <div class="contact-info-left bg-secondary border border-dark p-3">
+          <div class="flex flex-col items-start mb-3">
+            <i class="fa-solid fa-map-location-dot h1"></i>
+            <p class="font-bold">Address</p>
+            <span class="text-secondary"
+              >One Georgian Dr. Barrie, <br />ON L4M 3X9, Canada.</span
+            >
+          </div>
+          <div class="flex flex-col items-start mt-3">
+            <i class="fa-solid fa-phone h1"></i>
+            <p class="font-bold">Phone</p>
+            <span class="text-secondary">705.728.1968</span>
+          </div>
+          <div class="flex flex-col items-start mt-3">
+            <i class="fa-solid fa-envelope h1"></i>
+            <p class="font-bold">Email</p>
+            <span class="text-secondary">inquire@georgiancollege.ca</span>
+          </div>
+        </div>
+        <div class="contact-info-right bg-secondary border border-dark">
+          <form class="flex justify-between items-stretch p-3">
+            <label class="contact-info-right-label my-3/2">
+              Name
+              <input type="text" name="name" placeholder="your name" class="w-full" />
+            </label>
+            <label class="contact-info-right-label my-3/2">
+              subject
+              <input type="text" name="name" placeholder="your name" class="w-full" />
+            </label>
+            <label class="contact-info-right-label my-3/2">
+              Phone
+              <input type="tel" name="name" placeholder="your name" class="w-full"/>
+            </label>
+
+            <label class="contact-info-right-label my-3/2">
+              Phone
+              <input type="email" name="name" placeholder="your name" class="w-full"/>
+            </label>
+            <label class="contact-info-right-textarea my-3/2">
+              <textarea placeholder="message" rows="5"></textarea>
+            </label>
+
+            <button type="submit" class="btn ">submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

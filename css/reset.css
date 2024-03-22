@@ -21,6 +21,7 @@
  */
 
 body {
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -346,4 +347,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+a{
+  text-decoration: none;
 }

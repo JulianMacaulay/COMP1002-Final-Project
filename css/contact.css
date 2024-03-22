@@ -1,0 +1,58 @@
+.contact-title {
+  position: relative;
+}
+
+.contact-title::after {
+  content         : "";
+  position        : absolute;
+  width           : 60px;
+  height          : 0.15rem;
+  background-color: var(--primary-color);
+  bottom          : -10px;
+  left            : 50%;
+  transform       : translateX(-50%);
+}
+
+
+.contact-info-left {
+  flex-grow : 1;
+  flex-basis: 200px;
+  margin-bottom: 20px;
+}
+
+.contact-info-right {
+  flex-grow : 2;
+  flex-basis: 300px;
+
+}
+
+
+.contact-info-right-label {
+  min-width: 300px;
+
+}
+
+.contact-info-right-textarea {
+  min-width: 300px;
+  width: 100%;
+}
+
+
+.contact-info-right-label>input{
+  padding: 10px 20px;
+  width: 80%;
+}
+.contact-info-right-textarea>textarea {
+  padding: 10px 20px;
+  width: 90%;
+}
+
+
+@media screen and (min-width: 767px) {
+  .contact-info-left{
+    margin: 0 20px 0 0;
+  }
+  .contact-info-right-label {
+    width: 50%;
+  }
+}

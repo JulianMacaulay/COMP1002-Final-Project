@@ -1,0 +1,38 @@
+{
+  "Hardware": [
+    {
+      "title": "Panasonic FZ-1 R·E·A·L 3DO Interactive Multiplayer",
+      "description": "The first 3DO system",
+      "price": "699.99"
+    },
+    {
+      "title": "Panasonic FZ-10 R·E·A·L 3DO Interactive Multiplayer",
+      "description": "Released on November 11, 1994 (a year after the FZ-1), it is a redesigned slimmer and lighter model that replaced the FZ-1 in Panasonic's portfolio",
+      "price": "799.99"
+    },
+    {
+      "title": "Panasonic N-1005 3DO CD Changer ROBO",
+      "description": "An FZ-1 custom console, fitted with a five disc CD drive.",
+      "price": "599.99"
+    },
+    {
+      "title": "GoldStar GDO-101 Alive 3DO Interactive Multiplayer",
+      "description": "similar in physical appearance to the Panasonic model",
+      "price": "999.99"
+    },
+    {
+      "title": "GoldStar GDO-101M 3DO Interactive Multiplayer",
+      "description": "A version of the GDO-101 for foreign markets.",
+      "price": "399.99"
+    },
+    {
+      "title": "GoldStar GDO-202 3DO Interactive Multiplayer",
+      "description": "An FZ-1 custom console, fitted with a five disc CD drive.",
+      "price": "499.99"
+    }
+  ],
+  "Game": [
+
+    
+  ]
+}

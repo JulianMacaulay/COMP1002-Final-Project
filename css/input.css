@@ -1,0 +1,10 @@
+/* input & button */
+.btn{
+  outline: none;
+  appearance: none;
+  background-color: var( --primary-color);
+  border: 1px solid var( --primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}

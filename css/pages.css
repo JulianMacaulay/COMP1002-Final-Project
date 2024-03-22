@@ -1,6 +1,47 @@
 /* Specific styles for the home page */
 .home-banner {
     background-color: #f2f2f2;
-    padding: 2em;
+    padding         : 2em;
+    text-align      : center;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.jusify-between {
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+
+.jusify-end {
+    justify-content: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-stretch{
+    align-items: stretch;
+}
+
+.text-center {
     text-align: center;
 }
