@@ -1,43 +1,53 @@
 /* basic style */
-body, h1, p {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+p {
+    margin     : 0;
+    padding    : 0;
     font-family: Arial, sans-serif;
 }
-nav{
+
+nav {
     padding: 0.5rem;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+    display        : flex;
+    list-style     : none;
     justify-content: space-between;
-    align-items: center;
-   
+    align-items    : center;
+
     margin: 0;
 }
 
 nav ul li {
-    margin: 0 10px; /* Space between items */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* transition for hover effect */
+    margin       : 0 10px;
+    /* Space between items */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition   : background-color 0.3s;
+    /* transition for hover effect */
 }
-nav ul li a{
-    color: #1E1E1E;
-    font-weight: bold; /* Makes the text bold */
-    font-size: 20px; /* Adjust the size */
+
+nav ul li a {
+    color          : #1E1E1E;
+    font-weight    : bold;
+    /* Makes the text bold */
+    font-size      : 20px;
+    /* Adjust the size */
     text-decoration: none;
-    position: relative;
+    position       : relative;
 }
 
 nav ul li a:hover::after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #FFE630; /* Change background on hover */
+    content         : "";
+    position        : absolute;
+    bottom          : -25px;
+    left            : 0;
+    width           : 100%;
+    height          : 4px;
+    background-color: #FFE630;
+    /* Change background on hover */
 }
 
 
@@ -47,97 +57,115 @@ nav ul li a:hover::after {
 
 
 .banner {
-    color: #1E1E1E;
+    color     : white;
     text-align: center;
-    padding: 2rem;
-    background:  #0015A1  url('images/banner-background.jpg') center / cover no-repeat;
+    padding   : 2rem;
+    background: #0015A1 url('images/banner-background.jpg') center / cover no-repeat;
 }
 
 /* Flex Container for Products */
 .flex-container {
-    padding: 1rem 0;
-    display: flex;
+    padding        : 1rem 0;
+    display        : flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1rem;
+    flex-wrap      : wrap;
+    padding        : 1rem;
 }
 
 .product {
     display: flex;
-    padding: 1rem 0;
-    flex: 1 0 calc(25% - 1rem);
-    margin: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex-direction: column; /* make elements  vertically */
-    justify-content: space-between
+
+    flex           : 1 0 calc(25% - 1rem);
+    margin         : 0.5rem;
+    box-shadow     : 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction : column;
+    /* make elements  vertically */
+    justify-content: space-between;
 }
 
 
 .product-image {
-    width: 100%;
+    width  : 100%;
     display: block;
+    height : 100%;
+}
+
+.product-image-contain {
+    object-fit: contain;
+}
+
+.product-image-cover {
+    object-fit: cover;
+}
+
+
+.product h3 {
+    padding: 1rem;
 }
 
 /* Category and Releases Styles */
 .shop-by-category h2,
 .new-releases h2 {
     text-align: center;
-    margin: 2rem 0;
+    margin    : 2rem 0;
 }
+
 .Games-Introduction h2 {
     text-align: center;
-    margin: 2rem 0;
-    
+    margin    : 2rem 0;
+
 }
 
 .categories-container,
 .releases-container {
-    padding: 1rem 0;
-    display: flex;
+    padding        : 1rem 0;
+    display        : flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap      : wrap;
+    gap            : 1rem;
+    max-width      : 1200px;
+    margin         : 0 auto;
 }
 
 .category-item,
 .release-item {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    padding: 1rem 0;
-    flex: 1 0 calc(20% - 1rem);
-    height: px;
+    display         : flex;
+    flex            : 1 0 calc(20% - 1rem);
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : flex-start;
     background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border          : 1px solid #ddd;
 }
+
+
+.release-item h3 {
+    padding: 1rem;
+}
+
 .Games-Introduction {
-    max-width: 1200px; /*max width */
-    margin: auto; /* Center the section */
-    padding: 2rem; /* Add some padding around the content */
+    max-width: 1200px;
+    /*max width */
+    margin   : auto;
+    /* Center the section */
+    padding  : 2rem;
+    /* Add some padding around the content */
 }
-
-.release-item iframe {
-    width: 100%; /* Take the full width of the container */
-    height: 300px; /* Set a fixed height/
-    border: none; /*  removes the border */
-}
-
 
 .release-item img {
-    max-width: 100%; /* max size of the images */
-    height: 80%; /* fixed portion of for the image */
-    object-fit: cover; /* image without distortion */
+    width        : 100%;
+    /* max size of the images */
+    height       : 200px;
+    /* fixed portion of for the image */
+    object-fit   : cover;
+    /* image without distortion */
+    margin-bottom: 1rem;
 }
 
 .release-item h3 {
     text-align: center;
-    margin: 0; 
-    width: 100%; 
+    margin    : 0;
+    width     : 100%;
 }
 
 
@@ -146,46 +174,50 @@ nav ul li a:hover::after {
 
 footer {
     background-color: #1E1E1E;
-    color: white;
-    padding: 20px;
+    color           : white;
+    padding         : 20px;
 }
 
 .footer-container {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap; /* This will ensure the content wraps on smaller screens */
+    display        : flex;
+    justify-content: space-evenly;
+    flex-wrap      : wrap;
+    /* This will ensure the content wraps on smaller screens */
 }
 
 
 .releases-container {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around; /* This will distribute space evenly around each item */
-    align-items: stretch; 
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    /* This will distribute space evenly around each item */
+    align-items    : stretch;
 }
 
 .footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px; /* Minimum width before the content will wrap */
+    flex     : 1;
+    margin   : 10px;
+    min-width: 200px;
+    /* Minimum width before the content will wrap */
 }
 
 .footer-section h4 {
-    color: #FFF;
+    color        : #FFF;
     margin-bottom: 15px;
 }
 
 .footer-section ul,
 .footer-section p {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding        : 0;
+    margin         : 0;
 }
 
 .footer-section ul li a {
-    color: #CCC;
+    color          : #CCC;
     text-decoration: none;
-    display: block; /* Make the links stack vertically */
+    display        : block;
+    /* Make the links stack vertically */
 }
 
 .footer-credit {
@@ -193,18 +225,20 @@ footer {
     text-align: center;
 
     /* text-align: center; */
-    margin-top: 20px; /* Add space above the credit line */
-    color: #CCC;
+    margin-top: 20px;
+    /* Add space above the credit line */
+    color     : #CCC;
 }
 
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;
+        align-items   : center;
     }
 
     .footer-section {
-        width: 100%; /* Full width on smaller screens */
+        width : 100%;
+        /* Full width on smaller screens */
         margin: 10px 0;
     }
 }
@@ -213,29 +247,32 @@ footer {
 
 
 .app-link {
-    display: block;
+    display      : block;
     margin-bottom: 0.5em;
 }
 
 .footer-credit {
     text-align: center;
     margin-top: 2em;
-    color: #CCCCCC;
+    color     : #CCCCCC;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .product, .category-item, .release-item {
-        flex: 1 0 100%;
+
+    .product,
+    .category-item,
+    .release-item {
+        flex     : 1 0 100%;
         max-width: 100%;
-        margin: 0.5rem 0;
+        margin   : 0.5rem 0;
     }
 }
 
 @media (max-width: 480px) {
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items   : flex-start;
     }
 
     .logo {

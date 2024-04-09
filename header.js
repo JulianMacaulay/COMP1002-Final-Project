@@ -3,10 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
   header.innerHTML = `
         <nav>
             <ul class="header-navigation">
-                <li class="logo_item"><img src="images/3DO_Company_logo.png" alt="3DO Logo" class="logo"></li>
+                <li class="logo_item">
+                    <a href="./HomePage.html">
+                        <img src="images/3DO_Company_logo.png" alt="3DO Logo" class="logo">
+                    </a>
+                </li>
                 <li>
                     <ul>
-                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="./ProductsPage.html">Shop</a></li>
                 <li><a href="./About.html">About Us</a></li>
                 <li><a href="./Contact.html">Contact US</a></li>
                 
