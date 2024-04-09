@@ -50,6 +50,10 @@ nav ul li a:hover::after {
     /* Change background on hover */
 }
 
+nav ul li.logo_item a:hover::after {
+    height          : 0px;
+}
+
 
 .logo {
     height: 50px;
