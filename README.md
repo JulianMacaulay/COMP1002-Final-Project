@@ -7,8 +7,6 @@
 - HTML
 - Css
 - vanilla JavaScript
-- Swiper.js
-- TailwindCSS
 
 ## Theme
 
