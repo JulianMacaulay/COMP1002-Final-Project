@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <nav>
             <ul class="header-navigation">
                 <li class="logo_item">
-                    <a href="./HomePage.html">
+                    <a href="./index.html">
                         <img src="images/3DO_Company_logo.png" alt="3DO Logo" class="logo">
                     </a>
                 </li>
