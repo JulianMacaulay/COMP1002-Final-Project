@@ -25,7 +25,7 @@
                         </div>
                         <div class="empty"></div>
                         <ul class="breadcrumb-nav">
-                            <li><a href="HomePage.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                             <li>Products</li>
                         </ul>
             </div>
@@ -886,12 +886,12 @@
     var currentPage = 0;//current page
     var listNum = 6;//the item every page shows
     var PagesLen;//pages in total
-    var PageNum = 3;//page link in display
+    var PageNum = 2;//page link in display
     window.onload = function(){
         obj = document.getElementById("single-product-box").getElementsByClassName("single-product");
         j = obj.length//number of items
         PagesLen = Math.ceil(j / listNum);//calculate page in total
-        upPage(0)
+        upPage(0);
     }
     function upPage(p){
         currentPage = p
@@ -930,7 +930,7 @@
     }
 </script>
 <script language="javascript"> //keep toggle btn active
-    function toggleActive(element) {
+    function toggleActive(element) {//get element
         var obj_1 = document.getElementById("detailed");
         var obj_2 = document.getElementById("rough");
         var obj_3 = document.getElementsByClassName("product-main-display-container");
@@ -938,7 +938,7 @@
         var obj_5 = document.getElementsByClassName("single-product-container");
         var obj_6 = document.getElementsByClassName("single-product-image");
         var obj_7 = document.getElementsByClassName("single-product-info");
-        if(element.classList == "active"){
+        if(element.classList == "active"){// do nothing
 
         }
         else{
